@@ -2,6 +2,7 @@ package com.example.jfinal_blog.view;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -139,14 +140,14 @@ public class LeftAndRightView extends RelativeLayout implements OnTouchListener 
 	/**
 	 * 重写BidirSlidingLayout的构造函数，其中获取了屏幕的宽度和touchSlop的值。
 	 */
-	public LeftAndRightView(Context context) {
-		super(context);
+	public LeftAndRightView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		// TODO Auto-generated constructor stub
 		WindowManager manager = (WindowManager) context
 				.getSystemService(Context.WINDOW_SERVICE);
 		screenWidth = manager.getDefaultDisplay().getWidth();
 		touchSlop = ViewConfiguration.getTouchSlop();
 	}
-
 	/**
 	 * 
 	 * 
