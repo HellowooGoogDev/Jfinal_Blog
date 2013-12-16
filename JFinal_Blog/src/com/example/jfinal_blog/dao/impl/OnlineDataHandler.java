@@ -3,6 +3,7 @@ package com.example.jfinal_blog.dao.impl;
 import com.example.jfinal_blog.client.BlogMessage;
 import com.example.jfinal_blog.client.User;
 import com.example.jfinal_blog.dao.DataHandler;
+
 /**
  * 
 * 类描述： 在线数据接口实现
@@ -15,6 +16,12 @@ public class OnlineDataHandler implements DataHandler {
 
     @Override
     public BlogMessage onLogin(User user) {
+	// TODO Auto-generated method stub
+	return null;
+    }
+
+    @Override
+    public BlogMessage onLogout(User user) {
 	// TODO Auto-generated method stub
 	return null;
     }

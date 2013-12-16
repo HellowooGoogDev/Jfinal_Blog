@@ -16,6 +16,14 @@ public class OfflineDataHandler implements DataHandler {
 
     @Override
     public BlogMessage onLogin(User user) {
+	BlogMessage bMessage=new BlogMessage();
+         
+	return bMessage;
+    }
+
+    @Override
+    public BlogMessage onLogout(User user) {
+	// TODO Auto-generated method stub
 	return null;
     }
 
